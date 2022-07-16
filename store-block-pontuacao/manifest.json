@@ -1,0 +1,19 @@
+{
+  "vendor": "bitsized",
+  "name": "store-block-pontuacao",
+  "version": "1.0.0",
+  "title": "Pontuacao",
+  "description": "Componente para exibir a pontuação do usuário",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.session-client": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
