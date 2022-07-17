@@ -1,0 +1,112 @@
+{
+  "store.custom#carteira": {
+    "children": [
+      "responsive-layout.desktop#desktop-carteira",
+      "responsive-layout.mobile#mobile-carteira"
+    ]
+  },
+  "responsive-layout.desktop#desktop-carteira": {
+    "children": [
+      "flex-layout.row#desktop-carteira-main"
+    ]
+  },
+  "flex-layout.row#desktop-carteira-main": {
+    "props": {
+      "blockClass": "flex-layout-row-carteira-main",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "colJustify": "around",
+      "marginTop": 4
+    },
+    "children": [
+      "flex-layout.col#desktop-carteira-logo",
+      "flex-layout.col#desktop-carteira-pontuacao"
+    ]
+  },
+  "flex-layout.col#desktop-carteira-logo": {
+    "props": {
+      "paddingRight": 0,
+      "width": "40%"
+    },
+    "children": [
+      "image#logo-carteira"
+    ]
+  },
+  "flex-layout.col#desktop-carteira-pontuacao": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "60%",
+      "paddingLeft": 10,
+      "paddingRight": 10
+    },
+    "children": [
+      "rich-text#desktop-carteira-titulo",
+      "rich-text#desktop-carteira-descricao",
+      "pontuacao"
+    ]
+  },
+  "rich-text#desktop-carteira-titulo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Bem vindo a sua Carteira de OctoPontos"
+    }
+  },
+  "rich-text#desktop-carteira-descricao": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "##### Aqui você pode acompanhar todos os Octopontos adquiridos na nossa loja. Acumule Octopontos em cada nova compra realizada."
+    }
+  },
+  "image#logo-carteira": {
+    "props": {
+      "src": "assets/OCTOPUSTORE-Carteira.png"
+    }
+  },
+  "responsive-layout.mobile#mobile-carteira": {
+    "children": [
+      "flex-layout.row#mobile-carteira-logo",
+      "flex-layout.row#mobile-carteira-pontuacao"
+    ]
+  },
+  "flex-layout.row#mobile-carteira-logo": {
+    "props": {
+      "paddingRight": 0
+    },
+    "children": [
+      "image#logo-carteira"
+    ]
+  },
+  "flex-layout.row#mobile-carteira-pontuacao": {
+    "props": {
+      "paddingLeft": 10,
+      "paddingRight": 10
+    },
+    "children": [
+      "flex-layout.col#mobile-carteira-pontuacao-col"
+    ]
+  },
+  "flex-layout.col#mobile-carteira-pontuacao-col": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#mobile-carteira-titulo",
+      "rich-text#mobile-carteira-descricao",
+      "pontuacao"
+    ]
+  },
+  "rich-text#mobile-carteira-titulo": {
+    "props": {
+      "text": "#### Bem vindo a sua Carteira de Octopontos"
+    }
+  },
+  "rich-text#mobile-carteira-descricao": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "###### Aqui você pode acompanhar todos os <span>Octopontos</span> adquiridos na nossa loja. Acumule Octopontos em cada nova compra realizada."
+    }
+  }
+}

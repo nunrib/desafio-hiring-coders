@@ -2,7 +2,6 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      "pontuacao",
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
@@ -17,12 +16,16 @@
       "preload": true,
       "images": [
         {
-          "image": "assets/banner.png",
-          "mobileImage": "assets/banner.png"
+          "image": "assets/banner-pontos.png",
+          "mobileImage": "assets/banner-pontos.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/banner-frete-1.png",
+          "mobileImage": "assets/banner-frete-1.png"
+        },
+        {
+          "image": "assets/banner-frete-2.png",
+          "mobileImage": "assets/banner-frete-2.png"
         }
       ]
     }
@@ -74,9 +77,9 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "imageUrl": "assets/banner-polvo.jpg",
+      "headline": "BitSized",
+      "callToActionText": "Descubra",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
