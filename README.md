@@ -68,10 +68,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ```shell
 src/
-|-- service-api/# Back-end 
+|-- service-api/# Back-end - Contém a lógica para identificar a compra, cliente e valor pago para gerar os pontos
     |-- docs
-    |-- node/# Contém a lógica para identificar a compra, cliente e valor pago para gerar os pontos
-|-- store-block-pontuacao/# Componente personalizado
+    |-- node/
+|-- store-block-pontuacao/# Componente personalizado para carteira digital, onde mostrará os pontos do cliente
     |-- messages
     |-- node
     |-- react
