@@ -1,118 +1,174 @@
-# Projeto para a fase 03 do curso Hiring Coders 2022, casa BitSized, equipe 01
+![octopustore](https://user-images.githubusercontent.com/68860740/180073423-ee6e82eb-b55f-4823-af82-f5ae184ba467.png)
 
-## Descrição do Projeto
+<h1 align="center">Octopustore - Fidelização do cliente com sistema de pontos</h1>
 
-Esse projeto foi feito a partir dos conhecimentos adquiridos durante o curso Hiring Coders, usando a plataforma da VTEX IO.
+<p align="center">
+  Uma loja <a href="https://vtex.com/br-pt/" target="_blank">VTEX</a> responsiva desenvolvida com <a href="https://vtex.com/br-pt/vtex-io/?utm_source=google&utm_medium=cpc&utm_campaign=BR_VTEX_Search_Branded_Others&utm_term=sistema%20vtex&utm_content=ecommerce_601497335179">VTEX IO</a> que ao termos uma compra realizada e essa compra passar da janela de cancelamento, ou seja, do período que o cliente tem para realizar o cancelamento da compra caso desista, identifica os dados dessa compra como o cliente e valor pago (desconsiderando frete e deduzindo possíveis descontos) e salva no Master data, que seria a solução da própria VTEX para armazenamento de dados.
+  Com esses dados salvos, a cada 1 real em compra é gerado 1 ponto(octoponto) e para o cliente ter controle dos seus pontos disponibilizamos uma página onde o cliente consulta sua pontuação atualizada.
+</p>
 
-O objetivo foi criar um sistema de contagem de pontos em um site de compras fictício, com os pontos sendo somados após a concretização da compra.
+<p align="center">
+ <a href="#desenvolvedores">Desenvolvedores</a> •
+ <a href="#feature">feature</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#arquitetura">Arquitetura</a> •
+ <a href="#como-usar">Como usar</a> •
+ <a href="#desafios">Desafios</a> •
+ <a href="#melhorias">Melhorias</a> 
+</p>
 
-[Tabela de conteúdos](#tabela-de-conteudos)
+<h4 align="center">
+	 Status: Em desenvolvimento
+</h4>
 
-<!--ts-->
+<h4 align="center">
+  <a  href="#">
+    Octopustore
+  </a>
+</h4>
 
-* [Sobre](#sobre)
+### Desenvolvedores
+ 
+ - Manoella Rossi
+ - Marcone Carvalho
+ - Melvim Chang
+ - Otávio Cleyderman
+ - Samuel Barbosa
+ - Saulo Santos
+ - Victor Ferreira
+ - Willy Oliveira
 
-O projeto foi desenvolvido pela equipe 01 da casa BitSized para o desafio da fase 03 do Hiring Coders 2022.  O objetivo foi criar um sistema de contagem e armazenamento de pontos para cada compra feita no site de uma loja fictícia. O contador deve adicionar os pontos e armazenar a soma de cada cliente, que deve estar logado para fazer a compra e verificar os pontos.  Foi usada a plataforma da VTEX IO para escrever o código e a AWS para armazenamento na nuvem.
 
-Cada real gasto na loja equivale a 01 ponto. Valores quebrados terão as casas decimais desconsideradas e a contagem se dará somente pelo número inteiro que as preceda. Os pontos serão computados apensas depois que o pagamento for confirmado.
+### Feature
 
-*  [Instalação](#como-instalar)
+- [x] Implementar modelo de recompensa, a cada 1 real gasto deve gerar 1 ponto de recompensa
+- [x] Todo consumidor precisa saber quantos pontos tem em sua carteira virtual, logo um contador deve estar visível para validação do saldo.
+- [x] API para consultar o saldo
+- [x] API para debitar o saldo
 
-* [Pré-requisitos](#pre-requisitos)
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-
-[Git](https://git-scm.com), 
-[Node.js](https://nodejs.org/en/).
-
-Além disto é bom ter um editor para trabalhar com o código, como [VSCode]([https://code.visualstudio.com/](https://code.visualstudio.com/))
-
-#### 🎲 Rodando o Back End (servidor)
-
-#### Clone este repositório
-
-$ git clone <https://github.com/willyoliv/desafio-hiring-coders>
-
-#### Acesse a pasta do projeto no terminal/cmd
-
-$ cd desafio-hiring-coders
-
-#### Vá para a pasta server
-
-$ cd service-api
-
-#### Instale as dependências
-
-$ npm install
-
-#### Execute a aplicação em modo de desenvolvimento
-
-$ npm run dev:server
-
-#### O servidor inciará na porta:3333 - acesse <http://localhost:3333>
-
-* [Local files](#local-files)
-
-* [Remote files](#remote-files)
-
-* [Multiple files](#multiple-files)
-
-* [Tests](#testes)
-
-* 🛠 Tecnologias
+### Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/en/)
+- [VTEX IO](https://vtex.com/br-pt/vtex-io/?utm_source=google&utm_medium=cpc&utm_campaign=BR_VTEX_Search_Branded_Others&utm_term=sistema%20vtex&utm_content=ecommerce_601497335179);
+- [React](https://pt-br.reactjs.org/);
+- [TypeScript](https://www.typescriptlang.org/).
+- [Node](https://nodejs.org/pt-br/)
 
-- [React](https://pt-br.reactjs.org/)
 
-- [TypeScript]([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
+#### Auxiliares
 
-- [VTEX IO ] ([https://vtex.com](https://vtex.com))
+- [VTEX APIs](https://developers.vtex.com/vtex-rest-api/docs);
+- [Axios](https://github.com/axios/axios);
 
--[AWS ]([http://aws.amazon.com](http://aws.amazon.com))
+#### Padronização de código:
 
-<!--te-->
+- [ESLint](https://eslint.org/);
+- [Prettier](https://prettier.io/).
 
-##status do projeto
+### Arquitetura
 
-<h4  align="center">
+```shell
+src/
+|-- 
+|-- 
+|-- 
+|-- 
+|-- 
+|-- 
+|-- 
+|-- 
+```
+---
 
-🚀 Em construção, aguardando novas features
+### Como usar
+#### Pré-requisitos
 
-</h4>
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/package/npm), [VTEX Toolbelt(CLI do VTEX IO)](https://learn.vtex.com/docs/course-basic-blocks-step00setup-lang-pt)
 
-### Features
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-- [x] Armazenamento de pontos
+##### Clone este repositório
+```bash
+git clone https://github.com/willyoliv/desafio-hiring-coders.git
+```
+##### Acesse o terminal/cmd e utilizando os comandos do VTEX Toolbelt(CLI do VTEX IO) logue na conta bitsized
+```bash
+vtex login bitsized
+```
+##### Para verificar em qual conta VTEX e workspace está logado use o comando
+```bash
+vtex whoami
+```
+##### Para criar/usar um workspace utilize o comando VTEX use. Para esse projeto utilize
+```bash
+vtex use desafiogrupo1
+```
+##### Após logar e confirmar o workspace que será utilizado, acesse as pastas [service-api] e [store-block-pontuacao] do projeto no terminal/cmd e instale as dependências
+```bash
+cd store-block-pontuacao
+yarn
+# ou npm install
+```
+```bash
+cd service-api
+yarn
+# ou npm install
+```
+##### Para executar a aplicação em desenvolvimento deve acessar cada pasta(que seria um ambiente da loja, um ambiente do bloco customizado e o backend onde está a api para consumir os pedidos e verificar a compra para gerar os pontos) e rodar o comando vtex link
+```bash
+cd store-theme
+vtex link
+```
+```bash
+cd store-block-pontuacao
+vtex link
+```
+```bash
+cd service-api
+vtex link
+```
 
-- [x] Consulta de saldo de pontos
+#### Agora, como nesse desafio tem 5 grupos usando a mesma conta, confirme a configuração da aplicação de evento para que nossa aplicação funcione corretamente
 
-- [ ] Resgate de pontos para uso na loja
+Acesse o link: https://bitsized.myvtex.com/admin/apps/vtex.orders-broadcast/setup
 
-Resultado:
+No campo "Notify Target workspace" verifique se está inserido "desafiogrupo1" e apenas ele. Se não estiver, adicione "desafiogrupo1" apenas no campo e clique em salvar. 
+![image](https://user-images.githubusercontent.com/68860740/180092482-b58516ca-34f4-4d54-98fe-5321117f2ffd.png)
 
-## Autor e colaboradores:
+  
+Após isso, pode acessar a loja, logar, realizar compra e verificar a sua carteira digital para companhar a sua pontuação
+___
 
-Manoella Rosi
 
-Marcondes
+#### Poderá acessar a loja no link: https://desafiogrupo1--bitsized.myvtex.com/
+![image](https://user-images.githubusercontent.com/68860740/180092974-5678c3cd-85eb-4545-8982-5d766ad3cf7f.png)
 
-Melvim Chang
 
-Otávio Cleyderman
+#### Para acessar a sua carteira digital, poderá clicar no banner sobre os pontos ou acessar esse link: https://desafiogrupo1--bitsized.myvtex.com/minha-carteira
+![image](https://user-images.githubusercontent.com/68860740/180093036-e35c5cec-6aec-492a-8b2c-9e8c3fb59291.png)
 
-Saulo Renato
 
-Vitor
 
-Willy Oliveira
+___
 
-## Contatos
+### Desafios
+<p> Colocar em prática todo o conhecimento adiquirido nos treinamentos nas plataformas da Gama e VTEX foi um desafio por si só, ve o quanto tinhamos absorvido e entendido.
+ Entender os conceitos por trás de cada tecnologia, principalmente do VTEX IO e sua extensa gama de clientes e apps e como cada conceito se relaciona na prática. 
+ 
+ Outro ponto foi a contrução do backend para escutar os eventos de compra, selecionar corretamente o status e com isso pegar as informações necessárias para salvarmos 
+ e termos a informação sobre qual cliente e quantos pontos ele adiquiriu devido a compra para mostrar no front foi cheia de reviravoltas, testes e mais testes sobre o resultado esperado e adiquirido, realmente foi um desafio e tanto, ainda mais levando em consideração o prazo de entrega.
+</p>
 
-[https://github.com/ManoellaRosi](https://github.com/ManoellaRosi)
+---
 
-[https://github.com/willyoliv](https://github.com/willyoliv)
+### Melhorias
+<p> 
+  Acreditamos que uma das melhorias aplicaveis seria quando ao backend ser mais componentizado a fim de aproveitar a escuta dos eventos de pedido para realizarmos mais ações e interação com o cliente.
+</p>
 
-Link com o template de exemplo.
+---
+
+<p align="center">Agradecemos a <a href="https://github.com/vtex">VTEX</a> e a <a href="https://www.gama.academy/">gama Academy</a> pela oportunidade!</p>
