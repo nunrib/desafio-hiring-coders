@@ -1,6 +1,18 @@
 {
   "store.product": {
     "children": [
+      "flex-layout.row#main-product-row"
+    ]
+  },
+  "flex-layout.row#main-product-row": {
+    "children": ["flex-layout.col#main-product-col"]
+  },
+  "flex-layout.col#main-product-col": {
+    "props": {
+      "marginLeft": 5,
+      "marginRight": 5
+    },
+    "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",

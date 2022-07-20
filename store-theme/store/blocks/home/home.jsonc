@@ -5,19 +5,27 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home"
+      "info-card#home",
+      "newsletter#home",
+      "back-to-top-button"
     ]
   },
-
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon" 
+    }
+  },
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 570,
       "preload": true,
       "images": [
         {
-          "image": "assets/banner-pontos.png",
-          "mobileImage": "assets/banner-pontos.png"
+          "image": "assets/banner-bitszed.png",
+          "mobileImage": "assets/banner-bitszed.png"
         },
         {
           "image": "assets/banner-frete-1.png",
@@ -42,19 +50,24 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Ofertas",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -71,18 +84,22 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "assets/banner-polvo.jpg",
-      "headline": "BitSized",
+      "headline": "OctopuStore",
       "callToActionText": "Descubra",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/about-us",
       "blockClass": "info-card-home",
       "textAlignment": "center"
+    }
+  },
+  "newsletter#home": {
+    "props": {
+      "label": "Fique por dentro de nossas novidades"
     }
   }
 }

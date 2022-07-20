@@ -1,4 +1,4 @@
-.row--menu-row {
+/* .row--menu-row {
   padding-right: 24px;
 }
 
@@ -9,11 +9,7 @@
 .row--payment-methods {
   padding-top: 16px;
 }
-
+*/
 .footerLayout {
-  /* background-color: #480A63; */
-}
-
-.payment-methods .paymentMethodIconImage {
-  color: white;
-}
+   background-color: #F9F9F9; 
+} 

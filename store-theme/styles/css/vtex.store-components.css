@@ -1,6 +1,6 @@
 .notificationBarContainer {
   background-color: #e6f1e6;
-  color: #03034e;
+  color: #480A63;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
@@ -14,30 +14,30 @@
 }
 
 .label {
-  color: #fff;
+  /* color: #fff; */
   font-size: 26px;
 }
 
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
-  color: #fff;
+  /* color: #fff; */
   border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
+  /* color: #fff; */
   font-size: 16px;
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
+  /* background-color: transparent; */
+  /* color: #fff; */
   border: none;
   margin-right: -24px;
 }
