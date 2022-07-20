@@ -26,7 +26,7 @@
   "rich-text#title-about-us": {
     "props": {
       "text":
-      "# OctopuStore",
+      "### Não se preocupe, nós temos!",
       "blockClass": "title"
     }
   },
@@ -39,7 +39,7 @@
   },
   "rich-text#about-us": {
     "props": {
-      "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+      "text": "**About us** \n\n Vendemos o que amamos - objetos atemporais essencias por sua função ou apenas pela capacidade de nos animar. Minimalismo e sustentabilidade orientam nossas escolhas. Procuramos produtos feitos para nosso dia a dia, capazes de apelar à nossa memória e aos nossos sentidos coletivos. Preferimos o que é feito localmente mas estamos interessados em ter todo o mundo na **OCTOPUSTORE**",
       "blockClass": "about"
     }
   }

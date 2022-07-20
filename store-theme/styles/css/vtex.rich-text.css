@@ -81,7 +81,7 @@
     color: #480A63;
     font-size: 40px;
     font-weight: 700;
-    max-width: 60%;
+    /* max-width: 60%; */
   }
 
   .container--title .paragraph {

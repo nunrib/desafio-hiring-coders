@@ -24,7 +24,7 @@ export async function readyForHandlingEvent(
   // Pegar e-mail e userProfileId do cliente
   const userProfileId = data.clientProfileData.userProfileId
 
-  const documento = await masterdata.searchDocuments<
+  const documents = await masterdata.searchDocuments<
     Octopontos
   >({
     dataEntity: DATA_ENTITY,
@@ -36,15 +36,25 @@ export async function readyForHandlingEvent(
     },
     schema: 'v0'
   })
-
-  if(documento.length != 0){
-    await masterdata.createOrUpdateEntireDocument({
+  
+  console.log("Documento", documents)
+  if(documents.length != 0){
+    // await masterdata.createOrUpdateEntireDocument({
+    //   dataEntity: DATA_ENTITY,
+    //   fields: {
+    //     userId: userProfileId,
+    //     pontos: documento[0].pontos,
+    //   },
+    //   id: documento[0].id,
+    // })
+    const newAmountOfPoints = documents[0].pontos + amountNumber
+    await masterdata.updatePartialDocument({
       dataEntity: DATA_ENTITY,
       fields: {
         userId: userProfileId,
-        pontos: documento[0].pontos,
+        pontos: newAmountOfPoints,
       },
-      id: documento[0].id,
+      id: documents[0].id,
     })
   } else {
     await masterdata.createDocument({

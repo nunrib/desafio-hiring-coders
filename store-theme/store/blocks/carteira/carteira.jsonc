@@ -47,9 +47,10 @@
   },
   "rich-text#desktop-carteira-titulo": {
     "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "### Bem vindo a sua Carteira de OctoPontos"
+      // "textAlignment": "CENTER",
+      // "textPosition": "CENTER",
+      "text": "### Bem vindo a sua Carteira de OctoPontos",
+      "blockClass": "title"
     }
   },
   "rich-text#desktop-carteira-descricao": {
@@ -99,7 +100,8 @@
   },
   "rich-text#mobile-carteira-titulo": {
     "props": {
-      "text": "#### Bem vindo a sua Carteira de Octopontos"
+      "text": "### Bem vindo a sua Carteira de Octopontos",
+      "blockClass": "title"
     }
   },
   "rich-text#mobile-carteira-descricao": {
