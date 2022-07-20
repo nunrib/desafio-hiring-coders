@@ -42,10 +42,7 @@
 ### Feature
 
 - [x] Implementar modelo de recompensa, a cada 1 real gasto deve gerar 1 ponto de recompensa
-- [x] Todo consumidor precisa saber quantos pontos tem em sua carteira virtual, logo um contador deve estar visível para validação do saldo.
-- [x] API para consultar o saldo
-- [x] API para debitar o saldo
-
+- [x] Todo cliente precisa saber quantos pontos tem em sua carteira virtual, logo um contador deve estar visível para validação do saldo.
 
 ### Tecnologias
 
@@ -71,14 +68,21 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ```shell
 src/
-|-- 
-|-- 
-|-- 
-|-- 
-|-- 
-|-- 
-|-- 
-|-- 
+|-- service-api/# Back-end 
+    |-- docs
+    |-- node/# Contém a lógica para identificar a compra, cliente e valor pago para gerar os pontos
+|-- store-block-pontuacao/# Componente personalizado
+    |-- messages
+    |-- node
+    |-- react
+    |-- store
+|-- store-theme/# Front-end da loja
+    |-- assets
+    |-- docs
+    |-- sitemap
+    |-- store
+    |-- styles
+|--readme.md
 ```
 ---
 
