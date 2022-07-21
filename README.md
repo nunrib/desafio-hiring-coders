@@ -10,6 +10,8 @@
 <p align="center">
  <a href="#desenvolvedores">Desenvolvedores</a> •
  <a href="#feature">feature</a> •
+ <a href="#fluxograma-da-feature">Fluxograma da feature</a> •
+ <a href="#realização-e-acompanhamento-das-atividades">Realização e acompanhamento das atividades</a> •
  <a href="#tecnologias">Tecnologias</a> •
  <a href="#arquitetura">Arquitetura</a> •
  <a href="#como-usar">Como usar</a> •
@@ -18,7 +20,7 @@
 </p>
 
 <h4 align="center">
-	 Status: Em desenvolvimento
+	 Status: Finalizado
 </h4>
 
 <h4 align="center">
@@ -37,12 +39,23 @@
  - Saulo Santos
  - Victor Ferreira
  - Willy Oliveira
-
+ 
+### Planejamento
+ - Alinhamento do time: A primeira reunião foi usada para alinhar as habilidades e conhecimento de cada integrante do grupo.
+ - Levantamento de requisitos: Foram identificados quais as ferramentas e tecnologias seriam utilizadas para o desenvolvimento do projeto. 
+ - Atribuição de tarefas: Essa atividade foi realizada na primeira reunião. Os integrandes do grupo foram alocados em equipes de frontend e backend.
 
 ### Feature
 
 - [x] Implementar modelo de recompensa, a cada 1 real gasto deve gerar 1 ponto de recompensa
 - [x] Todo cliente precisa saber quantos pontos tem em sua carteira virtual, logo um contador deve estar visível para validação do saldo.
+
+### Fluxograma da feature
+![fluxograma](https://user-images.githubusercontent.com/40326598/180118404-b4978650-f716-443a-941e-1aed2ce4af02.png)
+
+### Realização e acompanhamento das atividades
+
+Reuniões diárias realizadas para alinhar como estávamos avançando e quais os próximos passos a serem executados
 
 ### Tecnologias
 
@@ -110,6 +123,10 @@ vtex whoami
 ```bash
 vtex use desafiogrupo1
 ```
+
+Obs Caso o projeto utilize outro workspace deve-se trocar o valor da variável `WORKSPACE` dentro do projeto store-block-pontuacao para o nome do workspace usado.
+![workspace](https://user-images.githubusercontent.com/40326598/180122139-ef22c15e-88e4-4a82-ac3c-bcad18a697d6.png)
+
 ##### Após logar e confirmar o workspace que será utilizado, acesse as pastas [service-api] e [store-block-pontuacao] do projeto no terminal/cmd e instale as dependências
 ```bash
 cd store-block-pontuacao
@@ -121,17 +138,20 @@ cd service-api
 yarn
 # ou npm install
 ```
-##### Para executar a aplicação em desenvolvimento deve acessar cada pasta(que seria um ambiente da loja, um ambiente do bloco customizado e o backend onde está a api para consumir os pedidos e verificar a compra para gerar os pontos) e rodar o comando vtex link
-```bash
-cd store-theme
-vtex link
-```
+##### Para executar a aplicação em desenvolvimento deve acessar cada pasta(que seria um ambiente da loja, um ambiente do bloco customizado e o backend onde está a api para consumir os pedidos e verificar a compra para gerar os pontos) e rodar o comando vtex link. 
+
+Obs **É de grande importância usar o `vtex link` nas aplicações seguindo a ordem abaixo:**
+
 ```bash
 cd store-block-pontuacao
 vtex link
 ```
 ```bash
 cd service-api
+vtex link
+```
+```bash
+cd store-theme
 vtex link
 ```
 
