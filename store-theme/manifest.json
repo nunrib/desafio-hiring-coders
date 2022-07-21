@@ -1,6 +1,6 @@
 {
   "vendor": "bitsized",
-  "name": "store-theme",
+  "name": "octopustore",
   "version": "1.0.0",
   "builders": {
     "assets": "0.x",

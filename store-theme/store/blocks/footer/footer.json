@@ -105,7 +105,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "OctopuStore",
       "blockClass": "footer"
     }
   }

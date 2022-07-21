@@ -82,7 +82,8 @@
   "flex-layout.row#mobile-carteira-pontuacao": {
     "props": {
       "paddingLeft": 10,
-      "paddingRight": 10
+      "paddingRight": 10,
+      "blockClass": "text-carteira-mobile"
     },
     "children": [
       "flex-layout.col#mobile-carteira-pontuacao-col"
@@ -106,9 +107,10 @@
   },
   "rich-text#mobile-carteira-descricao": {
     "props": {
+      "blockClass": "text-carteira",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "###### Aqui você pode acompanhar todos os <span>Octopontos</span> adquiridos na nossa loja. Acumule Octopontos em cada nova compra realizada."
+      "text": "###### Aqui você pode acompanhar todos os **Octopontos** adquiridos na nossa loja.\n ##### Acumule Octopontos em cada nova compra realizada."
     }
   }
 }

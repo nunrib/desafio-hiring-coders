@@ -65,6 +65,12 @@
   color: #480A63;
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
+}
+
+.container--text-carteira {
+  padding: 0 20px;
+  text-align: left;
 }
 
 @media only screen and (min-width: 640px) {
@@ -81,10 +87,14 @@
     color: #480A63;
     font-size: 40px;
     font-weight: 700;
-    /* max-width: 60%; */
+   /* max-width: 60%; */
   }
 
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+.paragraph--footer {
+  color: #ccc
 }

@@ -24,16 +24,8 @@
       "preload": true,
       "images": [
         {
-          "image": "assets/banner-bitszed.png",
-          "mobileImage": "assets/banner-bitszed.png"
-        },
-        {
-          "image": "assets/banner-frete-1.png",
-          "mobileImage": "assets/banner-frete-1.png"
-        },
-        {
-          "image": "assets/banner-frete-2.png",
-          "mobileImage": "assets/banner-frete-2.png"
+          "image": "",
+          "mobileImage": ""
         }
       ]
     }

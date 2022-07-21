@@ -100,6 +100,20 @@
 .flexRow--flex-layout-row-carteira-main {
   width: 1240px;
   margin: 0 auto;
+  border: double 6px transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(180deg, #39d57c 0%, #66317c 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-top: 1px solid #8bc34a;
+  border-right: 1px solid #8bc34a;
+  border-bottom: 1px solid #8bc34a;
+}
+
+.flexRowContent--text-carteira-mobile {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 40px;
   border: double 6px transparent;
   border-radius: 8px;
@@ -110,4 +124,5 @@
   border-top: 1px solid #8bc34a;
   border-right: 1px solid #8bc34a;
   border-bottom: 1px solid #8bc34a;
+  text-align: center;
 }

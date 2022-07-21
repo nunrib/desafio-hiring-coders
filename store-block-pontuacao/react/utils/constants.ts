@@ -1,1 +1,1 @@
-export const DATA_ENTITY = 'octopustore'
+export const WORKSPACE = 'desafiogrupo1'

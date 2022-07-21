@@ -98,3 +98,9 @@
 .image {
   image-rendering: -webkit-optimize-contrast;
 }
+
+@media only screen and (max-width: 640px) {
+  .imageElement {
+    width: 80%;
+  }
+}
