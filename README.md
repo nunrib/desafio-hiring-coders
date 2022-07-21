@@ -175,4 +175,4 @@ ___
 
 ---
 
-<p align="center">Agradecemos a <a href="https://github.com/vtex">VTEX</a> e a <a href="https://www.gama.academy/">gama Academy</a> pela oportunidade!</p>
+<p align="center">Agradecemos a <a href="https://github.com/vtex">VTEX</a> e a <a href="https://www.gama.academy/">Gama Academy</a> pela oportunidade!</p>
